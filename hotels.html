@@ -1,0 +1,365 @@
+<head>
+	<title>hotels</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+	<link rel="stylesheet" type="text/css" href="style.css" title="style" />
+    <link href="styles/stylej.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylej.css" title="style" />
+
+    <script src = "https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="scripts/script.js" defer ></script>
+        <script src = "https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="addcart.js"></script>
+
+
+</head>
+
+<body>
+   
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-ankh"></i>KEMET<i class="fa-solid fa-ankh"></i></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+        
+            </div>
+                
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="home.html" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">
+                        Flights
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="hotels.html" class="navbar__links">
+                        hotel
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="travel packages.html" class="navbar__links">
+                      Package
+                    </a>
+                </li> 
+                <li class="cart__btn">
+                    <button class="cart"><i class="fa-solid fa-cart-shopping"></i>
+                    <span class="count">0</span>
+                </button>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="call">
+                      
+                        <i class="fa-solid fa-phone"></i>
+        
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="login.html" class="LG">
+                        Login  
+                        
+                         <i class="fa-solid fa-right-to-bracket"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+
+        <div class="hotel-page">
+    <div class="hotel-filter">
+
+        <nav class="butons-htl">
+            <ul class="filter-link">
+                <li class="flink dis">
+                    <a class = "ls" href="#">Destination
+                        <span class="maticon downicn">
+                            <ion-icon name="caret-down-outline"></ion-icon>
+                        </span>
+                    </a>
+                    <ul class="destination-dd">
+                        <li><button class="active" data-name="sec1">ALL</button></li>   
+                        <li><button data-name="sec2">Ain Sokhna</button></li>                        
+                        <li><button data-name="sec3">Alexandria</button></li>     
+                        <li><button data-name="sec4">Aswan</button></li>                                        
+                        <li><button data-name="sec5">Cairo</button></li> 
+                        <li><button data-name="sec6">Dahab</button></li>  
+                        <li><button data-name="sec7">Hurgada</button></li>                                             
+                        <li><button data-name="sec8">Sharm El Sheikh</button></li>
+                    </ul>
+                </li>
+                <li  class="flink date">
+                    <a class = "ls" href="#">check-in date
+                        <span class="dtcon"><ion-icon name="calendar-number-outline"></ion-icon></span>
+                    </a>
+                    <input type="date" id="dateht">
+                    
+                </li>
+                <li class="flink date">
+                    <a class = "ls" href="#">check-out date
+                        <span class="dtcon"><ion-icon name="calendar-number-outline"></ion-icon></span>
+                    </a>
+                    <input type="date" id="dateht">
+                </li>
+
+
+            </ul>
+            
+        </nav>
+
+    </div>
+
+<div class="cards">
+    <div class="card" data-name="sec5">
+        <div class="scroll-container">
+            <img src="Le Meridien Cairo Airport\1a.jpg" width="600" height="400">
+            <img src="Le Meridien Cairo Airport\2a.jpg" width="600" height="400">
+            <img src="Le Meridien Cairo Airport\a3.jpg" width="600" height="400">
+            <img src="Le Meridien Cairo Airport\a4.jpg" width="600" height="400">
+            <img src="Le Meridien Cairo Airport\a5.jpg" width="600" height="400">
+            <img src="Le Meridien Cairo Airport\a6.jpg" width="600" height="400">
+            <img src="Le Meridien Cairo Airport\a7.jpg" width="600" height="400">
+          </div>
+    <div class="container">
+      <h4 class="hname"><b>Le Meridien Cairo Airport</b></h4> 
+      <p class="hdisc">The hotel is 3 km from Cairo Festival City Mall and 2 km from Sun City Mall. Le Meridien Cairo Airport offers a private parking on site.</p> 
+      <p class="loc" ></p><ion-icon name="location"></ion-icon>Cairo</p>
+    </div>
+  </div>
+  <div class="card" data-name="sec8">
+    <div class="scroll-container">
+        <img src="White Hills Resort sharm\f1.jpg" width="600" height="400">
+        <img src="White Hills Resort sharm\f2.jpg" width="600" height="400">
+        <img src="White Hills Resort sharm\f3.jpg" width="600" height="400">
+        <img src="White Hills Resort sharm\f4.jpg" width="600" height="400">
+        <img src="White Hills Resort sharm\f5.jpg" width="600" height="400">
+        <img src="White Hills Resort sharm\f6.jpg" width="600" height="400">
+        <img src="White Hills Resort sharm\f7.jpg" width="600" height="400">
+      </div>
+<div class="container">
+  <h4 class="hname"><b>White Hills Resort</b></h4> 
+  <p class="hdisc"> 42 km from White Hills Resort, while Tonino Lamborghini International Convention Center Sharm El Sheikh is 7.9 km from the property. Sharm el-Sheikh International Airport is 2 km away.</p> 
+  <p class="loc" ></p><ion-icon name="location"></ion-icon>sharm El Sheikh</p>
+</div>
+</div>
+<div class="card" data-name="sec3">
+    <div class="scroll-container">
+        <img src="Tolip Hotel Alexandria\g1.jpg" width="600" height="400">
+        <img src="Tolip Hotel Alexandria\g2.jpg" width="600" height="400">
+        <img src="Tolip Hotel Alexandria\g3.jpg" width="600" height="400">
+        <img src="Tolip Hotel Alexandria\g4.jpg" width="600" height="400">
+        <img src="Tolip Hotel Alexandria\g5.jpg" width="600" height="400">
+        <img src="Tolip Hotel Alexandria\g6.jpg" width="600" height="400">
+        <img src="Tolip Hotel Alexandria\g7.jpg" width="600" height="400">
+      </div>
+<div class="container">
+  <h4 class="hname"><b>Tolip Hotel</b></h4> 
+  <p class="hdisc">400 metres from Al-Salam Theatre and Stanley Bridge, and is 1.5 km from Sidi Gaber Railway Station. Borg el Arab International Airport is 42 km away. The property offers parking at an extra cost.</p> 
+  <p class="loc" >
+  </p><span id="lonicon"><ion-icon name="location"></ion-icon></span>Alexandria</p>
+</div>
+</div>
+    <div class="card" data-name="sec5">
+        <div class="scroll-container">
+            <img src="Cairo Marriott Hotel & Omar Khayyam Casino\b1.jpg" width="600" height="400">
+            <img src="Cairo Marriott Hotel & Omar Khayyam Casino\b2.jpg" width="600" height="400">
+            <img src="Cairo Marriott Hotel & Omar Khayyam Casino\b3.jpg" width="600" height="400">
+            <img src="Cairo Marriott Hotel & Omar Khayyam Casino\b4.jpg" width="600" height="400">
+            <img src="Cairo Marriott Hotel & Omar Khayyam Casino\b5.jpg" width="600" height="400">
+            <img src="Cairo Marriott Hotel & Omar Khayyam Casino\b6.jpg" width="600" height="400">
+            <img src="Cairo Marriott Hotel & Omar Khayyam Casino\b7.jpg" width="600" height="400">
+          </div>
+    <div class="container">
+      <h4 class="hname"><b>Marriott Hotel & Omar Khayyam Casino</b></h4> 
+      <p class="hdisc">The Gabalaya Park , Cairo Tower and Aquarium are just a 2-minute walk from the Cairo Marriott , moreover the hotel itself is build around a historic palace full on antiques</p> 
+      <p class="loc" ></p><ion-icon name="location"></ion-icon>Cairo</p>
+    </div>
+  </div>
+    <div class="card" data-name="sec3">
+        <div class="scroll-container">
+            <img src="Helnan Mamoura Hotel & Events Center alex\h1.jpg" width="600" height="400">
+            <img src="Helnan Mamoura Hotel & Events Center alex\h2.jpg" width="600" height="400">
+            <img src="Helnan Mamoura Hotel & Events Center alex\h3.jpg" width="600" height="400">
+            <img src="Helnan Mamoura Hotel & Events Center alex\h4.jpg" width="600" height="400">
+            <img src="Helnan Mamoura Hotel & Events Center alex\h5.jpg" width="600" height="400">
+            <img src="Helnan Mamoura Hotel & Events Center alex\h6.jpg" width="600" height="400">
+            <img src="Helnan Mamoura Hotel & Events Center alex\h7.jpg" width="600" height="400">
+          </div>
+    <div class="container">
+      <h4 class="hname"><b>Helnan Mamoura Hotel & Events Center</b></h4> 
+      <p class="hdisc">Montazah Aida Beach is 2.3 km from Helnan Mamoura Hotel & Events Center, while Sheraton Montazah Hotel Beach is 2.6 km away. Borg el Arab International Airport is 65 km from the property.</p> 
+      <p class="loc" ></p><ion-icon name="location"></ion-icon>Alexandria</p>
+    </div>
+  </div>
+    <div class="card" data-name="sec2">
+        <div class="scroll-container">
+            <img src="Jaz Little Venice Golf Resort ainskh\j1.jpg" width="600" height="400">
+            <img src="Jaz Little Venice Golf Resort ainskh\j2.jpg" width="600" height="400">
+            <img src="Jaz Little Venice Golf Resort ainskh\j3.jpg" width="600" height="400">
+            <img src="Jaz Little Venice Golf Resort ainskh\j4.jpg" width="600" height="400">
+            <img src="Jaz Little Venice Golf Resort ainskh\j5.jpg" width="600" height="400">
+            <img src="Jaz Little Venice Golf Resort ainskh\j6.jpg" width="600" height="400">
+            <img src="Jaz Little Venice Golf Resort ainskh\j7.jpg" width="600" height="400">
+          </div>
+    <div class="container">
+      <h4 class="hname"><b>Jaz Little Venice Golf Resort</b></h4> 
+      <p class="hdisc">Guest can enjoy outstanding 18-hole championship golf course at Sokhna Golf Club with an added change. The tropical pool area offers a relaxing base for sunbathing and swimming.</p> 
+      <p class="loc" ></p><ion-icon name="location"></ion-icon>Ain Sokhna</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="scroll-container" data-name="sec8">
+        <img src="Naama Bay Promenade Beach Resort Managed By Accor sharm\e1.jpg" width="600" height="400">
+        <img src="Naama Bay Promenade Beach Resort Managed By Accor sharm\e2.jpg" width="600" height="400">
+        <img src="Naama Bay Promenade Beach Resort Managed By Accor sharm\e3.jpg" width="600" height="400">
+        <img src="Naama Bay Promenade Beach Resort Managed By Accor sharm\e4.jpg" width="600" height="400">
+        <img src="Naama Bay Promenade Beach Resort Managed By Accor sharm\e5.jpg" width="600" height="400">
+        <img src="Naama Bay Promenade Beach Resort Managed By Accor sharm\e6.jpg" width="600" height="400">
+        <img src="Naama Bay Promenade Beach Resort Managed By Accor sharm\e7.jpg" width="600" height="400">
+      </div>
+<div class="container">
+  <h4 class="hname"><b>Naama Bay Promenade Beach Resort</b></h4> 
+  <p class="hdisc">Sharm El Sheikh International Airport is only 10 km away from the property. The hotel provides free parking.</p> 
+  <p class="loc" ></p><ion-icon name="location"></ion-icon>sharm El Sheikh</p>
+</div>
+</div>
+<div class="card" data-name="sec4">
+    <div class="scroll-container">
+        <img src="Pyramisa Island Hotel Aswan\c1.jpg" width="600" height="400">
+        <img src="Pyramisa Island Hotel Aswan\c2.jpg" width="600" height="400">
+        <img src="Pyramisa Island Hotel Aswan\c3.jpg" width="600" height="400">
+        <img src="Pyramisa Island Hotel Aswan\c4.jpg" width="600" height="400">
+        <img src="Pyramisa Island Hotel Aswan\c5.jpg" width="600" height="400">
+        <img src="Pyramisa Island Hotel Aswan\c6.jpg" width="600" height="400">
+        <img src="Pyramisa Island Hotel Aswan\c7.jpg" width="600" height="400">
+      </div>
+<div class="container">
+  <h4 class="hname"><b>Pyramisa Island Hotel</b></h4> 
+  <p class="hdisc">Guests can request to arrange for pick-up service form the airport to the hotel for a charge, by using the hotel’s contact details in the confirmation e-mail received.</p> 
+  <p class="loc" ></p><ion-icon name="location"></ion-icon>Aswan</p>
+</div>
+</div>
+<div class="card" data-name="sec4">
+    <div class="scroll-container">
+        <img src="Sofitel Legend Old Cataract aswan\d1.jpg" width="600" height="400">
+        <img src="Sofitel Legend Old Cataract aswan\d2.jpg" width="600" height="400">
+        <img src="Sofitel Legend Old Cataract aswan\d3.jpg" width="600" height="400">
+        <img src="Sofitel Legend Old Cataract aswan\d4.jpg" width="600" height="400">
+        <img src="Sofitel Legend Old Cataract aswan\d5.jpg" width="600" height="400">
+        <img src="Sofitel Legend Old Cataract aswan\d6.jpg" width="600" height="400">
+        <img src="Sofitel Legend Old Cataract aswan\d7.jpg" width="600" height="400">
+      </div>
+<div class="container">
+  <h4 class="hname"><b>Sofitel Legend Old Cataract</b></h4> 
+  <p class="hdisc">Guests can visit the hotel’s spa and relax in the sauna, the hammam, or the hot tub. They can also use the fitness centre or enjoy massage treatments.</p> 
+  <p class="loc" ></p><ion-icon name="location"></ion-icon>Aswan</p>
+</div>
+</div>
+<div class="card" data-name="sec3">
+    <div class="scroll-container">
+        <img src="Steigenberger Cecil Hotel Alexandria\i1.jpg" width="600" height="400">
+        <img src="Steigenberger Cecil Hotel Alexandria\i2.jpg" width="600" height="400">
+        <img src="Steigenberger Cecil Hotel Alexandria\i3.jpg" width="600" height="400">
+        <img src="Steigenberger Cecil Hotel Alexandria\i4.jpg" width="600" height="400">
+        <img src="Steigenberger Cecil Hotel Alexandria\i5.jpg" width="600" height="400">
+        <img src="Steigenberger Cecil Hotel Alexandria\i6.jpg" width="600" height="400">
+        <img src="Steigenberger Cecil Hotel Alexandria\i7.jpg" width="600" height="400">
+      </div>
+<div class="container">
+  <h4 class="hname"><b>Steigenberger Cecil Hotel</b></h4> 
+  <p class="hdisc">Steigenberger Cecil Hotel Alexandria is a hotel for connoisseurs who can appreciate the impeccable service & attention to detail.</p> 
+  <p class="loc" ></p><ion-icon name="location"></ion-icon>Alexandria</p>
+</div>
+</div>
+<div class="card" data-name="sec4">
+    <div class="scroll-container">
+        <img src="Sofitel Legend Old Cataract aswan\d1.jpg" width="600" height="400">
+        <img src="Sofitel Legend Old Cataract aswan\d2.jpg" width="600" height="400">
+        <img src="Sofitel Legend Old Cataract aswan\d3.jpg" width="600" height="400">
+        <img src="Sofitel Legend Old Cataract aswan\d4.jpg" width="600" height="400">
+        <img src="Sofitel Legend Old Cataract aswan\d5.jpg" width="600" height="400">
+        <img src="Sofitel Legend Old Cataract aswan\d6.jpg" width="600" height="400">
+        <img src="Sofitel Legend Old Cataract aswan\d7.jpg" width="600" height="400">
+      </div>
+<div class="container">
+  <h4 class="hname"><b>Sofitel Legend Old Cataract</b></h4> 
+  <p class="hdisc">Guests can visit the hotel's spa and relax in the sauna, the hammam, or the hot tub. They can also use the fitness centre or enjoy massage treatments.</p> 
+  <p class="loc" ></p><ion-icon name="location"></ion-icon>Aswan</p>
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+</div> 
+<div class="footer-all">
+  <div class="footer-container">
+      <div class="footer">
+          <div class="footer-heading footer-1">
+              <h2>
+                  About Us
+              </h2>
+              <a href="#">
+          
+                  Home
+              </a>
+              <a href="#">Hotels</a>
+              <a href="#">Tours</a>
+              <a href="#">Flights</a>
+              <a href="#">Services</a>
+          </div>
+          <div class="footer-heading footer-2">
+              <h2>
+                  Contact Us
+              </h2>
+              <a href="#">Support</a>
+              <a href="#">Customer Sevice</a>
+              <a href="#">Our Office</a>
+              <a href="#">Sponserships</a>
+          </div>
+          <div class="footer-heading footer-3">
+              <h2>
+                  Social Media
+              </h2>
+              <a href="#">Instagram
+                  <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#">Facebook
+                  <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#">Twitter
+                  <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#">Youtube
+                  <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="#">Tiktok
+                  <i class="fa-brands fa-tiktok"></i>
+              </a>
+          </div>
+          <div class="footer-email-form">
+              <h2> Join Our News Letter</h2>
+              <input type="email" placeholder="Enter Your Email Address" id="footer-email">
+              <input type="submit" value="Sign Up" id="footer-email-btn">
+          </div>
+      </div>
+  </div>
+ 
+
+   <script src="searchfilter.js"></script>
+
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
