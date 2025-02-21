@@ -1,0 +1,691 @@
+.loginbg{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    min-height: 100vh;
+    height: 100%;
+    background-image: url(pics/bglogin.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'poppins', sans-serif;
+}
+
+h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+
+}
+.input-box label{
+    margin-left: cm;
+    position:absolute;
+    top: 50%;
+    left: 20px;
+   transform: transLate(-50%);
+   font-size: 1em;
+   color: white;
+   pointer-events: none;
+   transition: .5s;
+
+}
+#passcon{
+    left: 60px;
+
+}
+
+#passcreat{
+    left: 50px;
+}
+
+.input-box input:focus~label, .input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 80%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    padding-left: 5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: white;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.rememberorno{
+    margin: 0 -15px 0 15px;
+    font-size: 0.9em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.rememberorno label input {
+    margin-right: 3px;
+}
+.rememberorno a{
+    color: white;
+    text-decoration: none;
+}
+.rememberorno a:hover{
+text-decoration: underline dotted;
+}
+button{
+    width: 100%;
+    height: 40px;
+    background: white;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+}
+.registerL{
+    text-align: center;
+    margin: 20px 0 1px 0;
+    font-size: 0.9em;
+    color: white; 
+}
+.registerL a{
+    text-decoration: none;
+    margin: 20px 0 1px 0;
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+
+}
+.registerL a:hover{
+    text-decoration: underline;
+    }
+
+.login-box{
+    margin-top: 10%;
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background: transparent;
+    border: 5px ; 
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+.signup-box{
+    margin-top: 5%;
+    position: relative;
+    width: 450px;
+    height: 600px;
+    background: transparent;
+    border: 5px ; 
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+
+
+
+.hotel-page{
+    margin: 0;
+    padding: 0;
+    background-image: url(pics/wcamel.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'poppins', sans-serif;
+}
+.hotel-filter{
+  display: flex;
+  font-size: 14px;
+  height: 50vh;
+
+}
+.butons-htl{
+    margin: auto;
+    padding: 0.5rem 1.5rem ;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.filter-link{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding:1erm ;
+}
+.flink .destination-dd{
+    list-style: none;
+    height:auto;
+    padding: 0.5rem 1.5rem ;
+    font-weight: 600;
+    cursor: pointer;
+}
+a .ls{
+    text-decoration: none;
+    padding-bottom: 2rem;
+    color: black;
+}
+.destination-dd{
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem  ;
+    background: antiquewhite;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 12px;
+    display: none;
+}
+.flink{
+font-weight:600 ;
+padding: 2rem ;
+}
+.flink:hover{
+background-color: #d8d8dd ;
+color: black;
+
+border-radius: 0.5rem;
+}
+.dis:hover .destination-dd{
+display:block ;
+}
+.dis a{
+display: flex;
+}
+.downicn{
+    font-size: 18px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ;
+}
+.dis:hover .downicn{
+    transform: rotate(180deg);
+}
+.destination-dd li:hover {
+    background: black;
+    color: white;
+    border-radius: 0.5rem;
+}
+.dtcon{
+    font-size: 18px;
+    position: relative;
+    right: -5px;
+}
+#dateht{
+
+    position:fixed;
+    background: antiquewhite;
+    color: black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    display: none;
+}
+.date:hover #dateht{
+    display: block;
+    position: relative;
+}
+.card { 
+    padding: 1.5rem;
+    margin-top: 2rem;
+    margin: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 27%;
+    height: 75ch;
+    border-radius: 5px;
+    background-color: #d8d8dd;
+    float:inline-end;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .scroll-container {
+ 
+    background-color: #d8d8dd;
+    overflow: auto;
+    white-space: nowrap;
+ 
+  }
+  
+ .scroll-container img {
+    padding: 5px;
+  }
+  .hname{
+    font-size:larger;
+    font-weight:1000 ;
+    color: black;
+    text-align: center;
+  }
+  .hdisc{
+    padding: .6rem;
+    margin: auto;
+  }
+  .cards{
+    background-color: white;
+
+
+  }
+.dis button{
+    border: none;
+    outline: none;
+    margin: 0;
+    background: none;
+    color: white;
+}
+.hide {
+    display: none;
+}
+.ls{
+    text-decoration: none;
+    color: black;
+
+}
+.loginbg{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    min-height: 100vh;
+    height: 100vh;
+    background-image: url(pics/bglogin.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'poppins', sans-serif;
+
+
+}
+
+h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+
+}
+.input-box label{
+    margin-left: cm;
+    position:absolute;
+    top: 50%;
+    left: 20px;
+   transform: transLate(-50%);
+   font-size: 1em;
+   color: white;
+   pointer-events: none;
+   transition: .5s;
+
+}
+#passcon{
+    left: 60px;
+
+}
+
+#passcreat{
+    left: 50px;
+}
+
+.input-box input:focus~label, .input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 80%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    padding-left: 5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: white;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.rememberorno{
+    margin: 0 -15px 0 15px;
+    font-size: 0.9em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.rememberorno label input {
+    margin-right: 3px;
+}
+.rememberorno a{
+    color: white;
+    text-decoration: none;
+}
+.rememberorno a:hover{
+text-decoration: underline dotted;
+}
+button{
+    width: 100%;
+    height: 40px;
+    background: white;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+}
+.registerL{
+    text-align: center;
+    margin: 20px 0 1px 0;
+    font-size: 0.9em;
+    color: white; 
+}
+.registerL a{
+    text-decoration: none;
+    margin: 20px 0 1px 0;
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+
+}
+.registerL a:hover{
+    text-decoration: underline;
+    }
+
+.login-box{
+
+    margin-top: 10%;
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background: transparent;
+    border: 5px ; 
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+.main{
+    background-color: antiquewhite;
+}
+.main__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: antiquewhite ;
+    z-index: 1;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 50px;
+}
+.main__content h1{
+font-size: 4rem;
+background-color: antiquewhite;
+background-image: linear-gradient(to top, #925d47 0%,  #b49383 100%  );
+background-size: 100%;
+-webkit-background-clip: text ;
+-moz-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-text-fill-color:transparent;
+}
+
+.main__content h3{
+    font-size: 2rem;
+    background-color: antiquewhite;
+    background-image: linear-gradient(to right, #33190f 0%,  #b49383 100%  );
+    background-size: 100%;
+    -webkit-background-clip: text ;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+.ex__btn{
+font-size: 1rem;
+background-image: linear-gradient(to bottom,#925d47 0%,  #b49383 100% );
+padding: 14px 32px;
+border: none;
+border-radius: 4px;
+color: #fff;
+margin-top: 2rem;
+cursor: pointer;
+position: relative;
+transition: all 0.5s;
+outline: none;
+
+}
+.ex__btn a{
+position: relative;
+z-index: 2;
+color: #fff;
+text-decoration: none;
+}
+.ex__btn::after{
+position: absolute;
+content: '' ;
+top:0;
+left: 0;
+width: 0;
+height: 100%;
+background: #210e06 ;
+transition: all 0.35s;
+border-radius: 4px;
+
+
+}
+.ex__btn:hover{
+    color: #fff;
+
+}
+.ex__btn:hover:after{
+    width: 100%;
+
+}
+.main__img--container{
+    
+    align-items: end;
+    padding: 10px;
+    margin-right: 7%;
+    margin-bottom: 7%;
+   
+    
+}
+#main__img{
+    height: 15cm;
+    width: 125%;
+  
+    
+    
+   
+}
+.beigebody{
+    background-color: antiquewhite;
+}
+.services{
+    background: antiquewhite ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding-top: 100px;
+    margin-bottom:  0;
+
+}
+.services h1{
+    background-color: antiquewhite;
+    background-size: 100%;
+    margin-bottom:  5rem;
+    font-size: 2rem;
+    color: #210e06;
+   margin-top: 0;
+
+}
+.services__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.footer-all{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #925d47;
+}
+.footer-container{
+    background-color: #925d47;
+padding-bottom: 4rem;
+
+}
+.footer{
+    width: 80%;
+    height: 50vh;
+    background-color: #925d47;
+   color: antiquewhite;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+
+}
+.footer-heading h2{
+    margin-bottom: 2rem;
+    color: antiquewhite;
+
+}
+.footer-heading a{
+color: #33190f;
+text-decoration: none;
+margin-bottom: 0.5rem;
+}
+.footer-heading a:hover{
+    color: antiquewhite;
+    transition: 0.3 ease-out;
+}
+.footer-email-form h2{
+
+color: antiquewhite;
+
+}
+
+#footer-email{
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+}
+#footer-email::placeholder{
+    color: #4e4d4d;
+
+}
+#footer-email-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color:#5f311f;
+    outline: none;
+    border: none;
+    color: antiquewhite;
+    font-size: 1rem;
+
+}
+#footer-email-btn:hover{
+    cursor: pointer;
+    background-color: #33190f;
+    transition: all 0.4 ease-out;
+}
+
+.inside p {
+    font-size: 1rem;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+.wrapp {
+    width: 200px;
+    margin: 2rem;
+    transform-style: preserve-3d;
+    transform: perspective(100rem);
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+
+}
+.inside {
+    --rX: 0deg;
+    --rY: 0deg;
+    --bX: 50%;
+    --bY: 80%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    transform: rotateX(var(--rX)) rotateY(var(--rY));
+    transition: 0.2s;
+    padding: 20px;
+    box-shadow: 0 30px 20px #5555;
+}
+.inside img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 30px 20px #5559;
+    z-index: -1;
+}
+.alldis h3{
+    font-size: 2rem;
+    background-color: antiquewhite;
+    background-image: linear-gradient(to right, #33190f 0%,  #b49383 100%  );
+    background-size: 100%;
+    -webkit-background-clip: text ;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    text-align: center;
+}
