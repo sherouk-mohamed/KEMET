@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="travel agency">
+    <meta name="keywords" content="travel,travel agencies near me">
+    <title> Kemet Travel</title>
+    <!--goolge font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<!--stylesheet-->
+<link href="styles/style.css" rel="stylesheet">
+<!--font awesome cdn-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="scripts/script.js" defer ></script>
+<link rel="stylesheet" type="text/css" href="style.css" title="style" />
+<link href="styles/stylej.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="stylej.css" title="style" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="scripts/script.js" defer ></script>
+    <script src = "https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+<script src="jquery-3.7.1.min.js"></script>
+<script src="addcart.js"></script>
+
+</head>
+<body>  
+<div class="homebody">
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-ankh"></i>KEMET<i class="fa-solid fa-ankh"></i></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+        
+            </div>
+                
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="home.html" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">
+                        Flights
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="hotels.html" class="navbar__links">
+                        hotel
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="travel packages.html" class="navbar__links">
+                      Package
+                    </a>
+                </li> 
+                <li class="cart__btn">
+<div class="cart">
+  <i class="fa fa-shopping-cart"></i>
+  <span class="count">0</span>
+</div>
+                    
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="call">
+                      
+                        <i class="fa-solid fa-phone"></i>
+        
+                    </a>
+                </li>
+                
+                <?php 
+            session_start(); // Ensure session is started
+            if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true): ?>
+                <li class="navbar__btn">
+                    <a href="account.html" class="account">
+                        Account <i class="fa-solid fa-user"></i>
+                    </a> 
+                </li>
+            <?php else: ?>
+                <li class="navbar__btn">
+                    <a href="login.html" class="LG">
+                        Login <i class="fa-solid fa-right-to-bracket"></i>
+                    </a>
+                </li>
+            <?php endif; ?>
+            </ul>
+        </div>
+        </nav>
+
+<div class="main">
+    <div class="main__container">
+        <div class="main__content">
+        <h1> JOURNEY THROUGH TIME</h1>
+        <h3>Unveilling Ancient Wonders And Timless Beauty.</h3>
+        <button class="ex__btn">
+         <a href="login.html">EXPLORE EGYPT</a>
+        </button>
+    </div>
+    <div class="main__img--container">
+       <img src="pics/pic11.jpeg"alt ="pic" id="main__img" ></a>
+        
+    </div>
+    </div>
+ 
+
+    
+    <div class="services">
+        <h1>A New Experience Is Waiting For You</h1>
+        <div class="services__container">
+            <div class="services__card">
+                <h3>A Fully Arranged Trip</h3>
+                <div class="bbtn">
+                <button>BOOK NOW</button>
+                </div>
+
+            </div>
+        
+        </div>
+
+
+    </div>
+       
+    <div class="alldis">
+        <h3>Our Destinations</h3>
+        <div class="wrapp">
+            <div class="inside">
+                <p>Ain Sokhna</p>
+                <img src="homecardpics\Egypt Ain Sokhna.jpg">
+            </div>
+        </div>
+        <div class="wrapp">
+            <div class="inside">
+                <p>Alexandria</p>
+                <img src="homecardpics\Alexandria _ Egypt.jpg">
+            </div>
+        </div>
+        <div class="wrapp">
+            <div class="inside">
+                <p>Aswan</p>
+                <img src="homecardpics\Aswan, Egypt.jpg">
+            </div>
+        </div>
+        <div class="wrapp">
+            <div class="inside">
+                <p>Cairo</p>
+                <img src="homecardpics\caairo.jpg">
+            </div>
+        </div>
+        <div class="wrapp">
+            <div class="inside">
+                <p>Dahab</p>
+                <img src="homecardpics\dahab.jpg">
+            </div>
+        </div>
+        <div class="wrapp">
+            <div class="inside">
+                <p>Hurgada</p>
+                <img src="homecardpics\Hurgada.jpg">
+            </div>
+        </div>
+        <div class="wrapp">
+            <div class="inside">
+                <p>Sharm EL-Sheikh</p>
+                <img src="homecardpics\Sharm EL-Sheikh, Egypt.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer-all">
+<div class="footer-container">
+    <div class="footer">
+        <div class="footer-heading footer-1">
+            <h2>
+                About Us
+            </h2>
+            <a href="#">
+        
+                Home
+            </a>
+            <a href="#">Hotels</a>
+            <a href="#">Tours</a>
+            <a href="#">Flights</a>
+            <a href="#">Services</a>
+        </div>
+        <div class="footer-heading footer-2">
+            <h2>
+                Contact Us
+            </h2>
+            <a href="#">Support</a>
+            <a href="#">Customer Sevice</a>
+            <a href="#">Our Office</a>
+            <a href="#">Sponserships</a>
+        </div>
+        <div class="footer-heading footer-3">
+            <h2>
+                Social Media
+            </h2>
+            <a href="#">Instagram
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">Facebook
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">Twitter
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">Youtube
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#">Tiktok
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+        <div class="footer-email-form">
+            <h2> Join Our News Letter</h2>
+            <input type="email" placeholder="Enter Your Email Address" id="footer-email">
+            <input type="submit" value="Sign Up" id="footer-email-btn">
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+<script src="home.js"></script>
+<script src="join.js"></script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="scripts.js"></script>
+</body>
+
+</html>
