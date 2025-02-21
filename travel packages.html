@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Kemet</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+         <!--goolge font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!--stylesheet-->
+    <link href="styles/stylej.css" rel="stylesheet">
+    <!--font awesome cdn-->
+
+    <link rel="stylesheet" type="text/css" href="stylej.css" title="style" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="scripts/script.js" defer ></script>
+        <script src = "https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="addcart.js"></script>
+	</head>
+
+<body>
+    <div class="homebody">
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo"><i class="fa-solid fa-ankh"></i>KEMET<i class="fa-solid fa-ankh"></i></a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+            
+                </div>
+                    
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="home.html" class="navbar__links">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/" class="navbar__links">
+                            Flights
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="hotels.html" class="navbar__links">
+                            hotel
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="travel packages.html" class="navbar__links">
+                          Package
+                        </a>
+                    </li> 
+                    <li class="cart__btn">
+                        <button class="cart"><i class="fa-solid fa-cart-shopping"></i>
+                        <span class="count">0</span>
+                    </button>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="/" class="call">
+                          
+                            <i class="fa-solid fa-phone"></i>
+            
+                        </a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="login.html" class="LG">
+                            Login  
+                            
+                             <i class="fa-solid fa-right-to-bracket"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </nav>
+        </div>
+        
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="scripts.js"></script>
+  <div class="background-img">
+    <img src= "pics/egy.jpg" alt = "travel packages image" class = "img" >
+    <div class = "text" > 
+        <h1>Our ExclusiveTravel Packages</h1> 
+    </div>
+  </div>
+  <div class="search-box">
+    <div class="searchrow">
+        <input type = "text" id = "input-box" placeholder="search anything" autocomplete = "off"> 
+        <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="result-box"></div>
+</div>
+    <section class="packages">
+        <div class="package-card">
+            <img src="pics/Nile river.jpg" alt="Destination 1" class = "photo">
+            <h2>Luxor Grand Tour</h2>
+            <p class="price">$999</p>
+            <p class="duration"> 5 Days</p>
+            <p class="description">Explore the beauty of Luxor with a guided tour of the city’s landmarks and attractions.</p>
+            <button class="Buttontravelpackage">Book Now</button>
+
+        </div>
+
+        <div class="package-card">
+            <img src="pics/Nile river.jpg" alt="Destination 2" class = "photo">
+            <h2>Aswan Adventure</h2>
+            <p class="price">$678</p>
+            <p class="duration">4 Days</p>
+            <p class="description">Experience the serene beauty of Aswan, Egypt’s southern gem, where ancient history and peaceful landscapes blend</p>
+            <button class="Buttontravelpackage" onclick="addtocart(item1)">Book Now</button>
+
+        </div>
+        <div class="package-card">
+            <img src="pics/Nile river.jpg" alt="Destination 3" class = "photo">
+            <h2>Best of the Red sea </h2>
+            <p class="From"> From London</p>
+            <p class="To"> To Sharm El-sheikh</p>
+            <p class="price">$849</p>
+            <p class="duration">4 Days</p>
+            <p class="description">Experience the ultimate beach getaway with a tailored travel package to Sharm El Sheikh, one of Egypt's most stunning resort towns</p>
+            <button class="Buttontravelpackage">Book Now</button>
+
+        </div>
+        <div class="package-card">
+            <img src="pics/Nile river.jpg" alt="Destination 4" class = "photo">
+            <h2>timeless Adventure to the pyramids</h2>
+            <p class="From"> From Seoul</p>
+            <p class="To"> To Giza</p>
+            <p class="price">$789</p>
+            <p class="duration">5 Days</p>
+            <p class="description">Explore the iconic Giza Pyramids with a guided tour that takes you through one of the world’s most famous archaeological sites.</p>
+            <button class="Buttontravelpackage">Book Now</button>
+
+        </div>
+        <div class="package-card">
+            <img src="pics/Nile river.jpg" alt="Destination 5" class = "photo">
+            <h2>7 days in paradise</h2>
+            <p class="From"> From: Barcelona</p>
+            <p class="To"> To: Hurghada</p>
+            <p class="price">$933</p>
+            <p class="duration"> 7 Days</p>
+            <p class="description">Indulge in a relaxing 7-day getaway to Hurghada, Egypt’s premier Red Sea resort. Enjoy sun-kissed beaches, stunning coral reefs, and a variety of water sports</p>
+            <button class="Buttontravelpackage">Book Now</button>
+
+        </div>
+
+        <div class="package-card">
+            <img src="pics/Nile river.jpg" alt="Destination 6" class = "photo">
+            <h2>Cairo Highlights: Ancient Wonders & Modern Vibes</h2>
+            <p class="From"> From Athens</p>
+            <p class="To"> To Cairo</p>
+            <p class="price">$900</p>
+            <p class="duration">5 Days</p>
+            <p class="description"> Explore the heart of Egypt with a 5-day tour of Cairo, where history and modernity blend perfectly.</p>
+            <button class="Buttontravelpackage">Book Now</button>
+
+        </div>
+        <div class="package-card">
+            <img src="pics/Nile river.jpg" alt="Destination 7" class = "photo">
+            <h2>Alexandria getaway</h2>
+            <p class="From"> From Newyork</p>
+            <p class="To"> To Alexandria</p>
+            <p class="price">$649</p>
+            <p class="duration">3 Days</p>
+            <p class="description">Discover the historic city of Alexandria, where Egypt’s ancient history meets the Mediterranean Sea, in this 3-day guided package</p>
+            <button class="Buttontravelpackage">Book Now</button>
+
+        </div>
+        <div class="package-card">
+            <img src="pics/Nile river.jpg" alt="Destination 8" class = "photo">
+            <h2>Sacred Egypt: A Journey Through Ancient Faiths</h2>
+            <p class="From"> From Rome</p>
+            <p class="To"> To Cairo</p>
+            <p class="price">$960</p>
+            <p class="duration">8 Days</p>
+            <p class="description">A spiritual journey through Egypt's rich history, exploring Christian landmarks like Coptic Cairo and iconic Islamic sites such as the Mosque of Muhammad Ali</p>
+            <button class="Buttontravelpackage">Book Now</button>
+
+        </div>
+        <div class="package-card">
+            <img src="pics/Nile river.jpg" alt="Destination 8" class = "photo">
+            <h2> A Journey Through Ancient Egypt</h2>
+            <p class="From"> From Dubai</p>
+            <p class="To"> To Giza</p>
+            <p class="price">$960</p>
+            <p class="duration">8 Days</p>
+            <p class="description">
+                <p class="description">Explore the iconic Giza Pyramids, the Great Sphinx, and the Egyptian Museum, housing treasures like King Tutankhamun's artifacts.</p>
+                <button class = Buttontravelpackage>Book Now</button>
+        </div>
+    </section>
+   </body>
+</html>
+
