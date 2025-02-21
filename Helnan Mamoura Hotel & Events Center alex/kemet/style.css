@@ -1,0 +1,331 @@
+.loginbg{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    min-height: 100vh;
+    height: 100%;
+    background-image: url(bglogin.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'poppins', sans-serif;
+}
+
+h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+
+}
+.input-box label{
+    margin-left: cm;
+    position:absolute;
+    top: 50%;
+    left: 20px;
+   transform: transLate(-50%);
+   font-size: 1em;
+   color: white;
+   pointer-events: none;
+   transition: .5s;
+
+}
+#passcon{
+    left: 60px;
+
+}
+
+#passcreat{
+    left: 50px;
+}
+
+.input-box input:focus~label, .input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 80%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    padding-left: 5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: white;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.rememberorno{
+    margin: 0 -15px 0 15px;
+    font-size: 0.9em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.rememberorno label input {
+    margin-right: 3px;
+}
+.rememberorno a{
+    color: white;
+    text-decoration: none;
+}
+.rememberorno a:hover{
+text-decoration: underline dotted;
+}
+button{
+    width: 100%;
+    height: 40px;
+    background: white;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+}
+.registerL{
+    text-align: center;
+    margin: 20px 0 1px 0;
+    font-size: 0.9em;
+    color: white; 
+}
+.registerL a{
+    text-decoration: none;
+    margin: 20px 0 1px 0;
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+
+}
+.registerL a:hover{
+    text-decoration: underline;
+    }
+
+.login-box{
+    margin-top: 10%;
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background: transparent;
+    border: 5px ; 
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+.signup-box{
+    margin-top: 5%;
+    position: relative;
+    width: 450px;
+    height: 600px;
+    background: transparent;
+    border: 5px ; 
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+
+
+
+.hotel-page{
+    margin: 0;
+    padding: 0;
+    background: #d8d8dd;
+    font-family: 'poppins', sans-serif;
+}
+.hotel-filter{
+  display: flex;
+  font-size: 14px;
+  height: 50vh;
+
+}
+.butons-htl{
+    margin: auto;
+    padding: 0.5rem 1.5rem ;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.filter-link{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding:1erm ;
+}
+.flink .destination-dd{
+    list-style: none;
+    height:auto;
+    padding: 0.5rem 1.5rem ;
+    font-weight: 600;
+    cursor: pointer;
+}
+a .ls{
+    text-decoration: none;
+    padding-bottom: 2rem;
+    color: black;
+}
+.destination-dd{
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem  ;
+    background: antiquewhite;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 12px;
+    display: none;
+}
+.flink{
+font-weight:600 ;
+padding: 2rem ;
+}
+.flink:hover{
+background-color: #d8d8dd ;
+color: black;
+
+border-radius: 0.5rem;
+}
+.dis:hover .destination-dd{
+display:block ;
+}
+.dis a{
+display: flex;
+}
+.downicn{
+    font-size: 18px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ;
+}
+.dis:hover .downicn{
+    transform: rotate(180deg);
+}
+.destination-dd li:hover {
+    background: black;
+    color: white;
+    border-radius: 0.5rem;
+}
+.dtcon{
+    font-size: 18px;
+    position: relative;
+    right: -5px;
+}
+#dateht{
+
+    position:fixed;
+    background: antiquewhite;
+    color: black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    display: none;
+}
+.date:hover #dateht{
+    display: block;
+    position: relative;
+}
+.card { 
+    padding: 1.5rem;
+    margin-top: 2rem;
+    margin: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 27%;
+    height: 75ch;
+    border-radius: 5px;
+    background-color: #d8d8dd;
+    float:inline-end;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .scroll-container {
+ 
+    background-color: #d8d8dd;
+    overflow: auto;
+    white-space: nowrap;
+ 
+  }
+  
+ .scroll-container img {
+    padding: 5px;
+  }
+  .hname{
+    font-size:larger;
+    font-weight:1000 ;
+    color: black;
+    text-align: center;
+  }
+  .hdisc{
+    padding: .6rem;
+    margin: auto;
+  }
+  .cards{
+    background-color: #fff;
+
+  }
+.dis button{
+    border: none;
+    outline: none;
+    margin: 0;
+    background: none;
+    color: white;
+}
+.hide {
+    display: none;
+}
+.ls{
+    text-decoration: none;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #c1c1c4;
+  }
+  
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.act {
+    background-color: #d8d8dd;
+    color: black;
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+  .downbar{
+    float: end;
+    background:#c1c1c4 ;
+    color: black;
+  }
