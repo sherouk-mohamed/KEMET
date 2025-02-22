@@ -1,2 +1,3 @@
 # KEMET
-A C++ implementation of Huffman encoding for image compression and decompression. The project reads an image file, compresses it using Huffman coding, and generates an encoded file. It can also reconstruct the original image from the compressed file.
+This web application allows users to search for hotels and travel packages, manage their bookings, and securely log in or sign up. The project integrates frontend UI components, JavaScript functionalities, and backend PHP scripts for database management.  
+
